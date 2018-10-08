@@ -1,0 +1,121 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+<style>
+body{
+	background-color:#a8a8a8;
+}
+table {
+	border-collapse: collapse;
+	width: 90%;
+    margin: auto;
+}
+td {
+	padding: 5px;
+}
+input {
+	border: 3px solid #cccccc;
+	border-radius: 10px;
+	background-color:#a8a8a8;
+}
+select {
+	width: 90%;
+	border: 3px solid #cccccc;
+	border-radius: 5px;
+	background-color:#a8a8a8;
+}
+textarea {
+	width: 90%;
+	border: 3px solid #cccccc;
+	border-radius: 10px;
+	background-color:#a8a8a8;
+}
+input:focus {
+	background-color: #828282;
+}
+h1 {
+	resize:none;
+	width: 90%;
+	text-align: center;
+	font-family: 'Mali', cursive;
+}
+</style>
+</head>
+<body>
+<h1>Tell us more</h1>
+<form name="survey" action="mailto:www.estherho@gmail.com">
+<table border="1">
+<!--1st column-->
+<tr>
+	<td>Name:</td>
+	<td><input type="text" name="t_name"></td>
+<!--2nd column-->
+<tr>
+	<td>Gender:</td>
+	<td>
+		<input type="radio" name="gender" value="Male">Male
+		<input type="radio" name="gender" value="Female">Female
+	</td>
+</tr>
+<!--3rd column-->
+<tr>
+	<td>Birthday:</td>
+	<td><input type="date" name="bday"></td>
+</tr>
+<!--4th column-->
+<tr>
+	<td>Email:</td>
+	<td><input type="email" name="tx_email"></td>
+</tr>
+<!--5th column-->
+<tr>
+	<td>Where do you know us?</td>
+	<td>
+		<input type="checkbox" name="source" value="tv">TV
+		<input type="checkbox" name="source" value="newspaper">Newspaper
+		<input type="checkbox" name="source" value="social">Social media
+		<input type="checkbox" name="source" value="internet">Internet
+		<input type="checkbox" name="source" value="friends">Friends
+		<input type="checkbox" name="source" value="other">Other
+	</td>
+</tr>
+<!--6th column-->
+<tr>
+	<td>Which part(s) do you like most?</td>
+	<td>
+		<select name="favourite" size="5" multiple>
+			<option value="color">Color</option>
+			<option value="font">Font</option>
+			<option value="layout">Layout</option>
+			<option value="content">Content</option>
+			<option value="graphics">Graphics</option>
+			<option value="animation">Animation</option>
+	</td>
+</tr>
+<!--7th column-->
+<tr>
+	<td>Comment:</td>
+	<td><textarea name="tx_comment" rows="10" cols="100">Type your comment here >U< </textarea></td>
+</tr>
+<!--8th column-->
+<tr>
+	<td>Rate us:</td>
+	<td>
+		<select name="rate">
+			<option value="5">5</option>
+			<option value="4">4</option>
+			<option value="3">3</option>
+			<option value="2">2</option>
+			<option value="1">1</option>
+	</td>
+</tr>
+<!--9th column-->
+<tr>
+	<td colspan="2">
+	<input type="submit" name="bn_sub">
+	<input type="reset" name="bn_reset">
+	</td>
+</tr>
+</form>
+</body>
+</html>
